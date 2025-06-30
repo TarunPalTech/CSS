@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #e91f1f;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: bisque;
+  padding: 0px 20px 20px 20px;
+  border-radius: 10px;
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+}
+
+.time {
+  display: flex;
+  justify-content: space-around;
+}
+
+.stamp {
+  font-size: 40px;
+  font-weight: bold;
+}
