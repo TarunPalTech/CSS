@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ways to define CSS</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="style1.css" />
+    <!-- link tag is used to define relationship between the document and an external resource. -->
+
+    <!-- Another way to link external css -->
+    <style>
+      @import url("style2.css");
+    </style>
+
+    <!-- Internal CSS -->
+    <style>
+      h1 {
+        background-color: black;
+        color: yellow;
+      }
+      p {
+        background-color: black;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    There are total three ways to define css:
+        1. Inline CSS
+        2. Internal CSS
+        3. External CSS 
+    -->
+
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>
+      <!-- Inline CSS: CSS within the line by using style attribute. -->
+      <span style="background-color: #fff; color: black">
+        Lorem ipsum dolor sit amet
+      </span>
+      consectetur adipisicing elit. Saepe asperiores distinctio harum quo non
+      pariatur voluptatum, mollitia totam fugit officia.
+    </p>
+  </body>
+</html>
