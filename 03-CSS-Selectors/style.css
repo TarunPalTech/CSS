@@ -1,0 +1,123 @@
+/* 
+What are the selectors?
+
+Selectors provide ability to select any element on the webpage. 
+
+Each and every Browser adds some default css with our HTML file for example the size of h1 heading is larger than h6.
+*/
+
+
+/* 
+What is DOM?
+
+How a website is loaded on a browser is known as Document Object Model.
+Whenever, you actually work with the DOM that means how your page structured and how it is laid out that is your DOM.
+
+This is the ability to transforming your HTML code into an Object Model or a tree that can be rendered by the browser.
+*/
+
+/* 
+Types of Browsers: There are so many types of selectors
+ 1. Universal Selector
+ 2. Class Selector
+ 3. Id Selector
+ 4. Type Selector
+ 5. Attribute Selector
+ 6. Descendant Selector
+ 7. Child Selector
+ 8. Adjacent Selector
+ 9. General Sibling Selector
+ 10. Pseudo Class Selector
+ 11. Pseudo Element Selector
+ 12. Gropuing Selector
+*/
+
+/* for examples: */
+
+/* 1. Universal Selector: to select the whole html document or the universal selector (*) in CSS does select all elements on the page. */
+
+*{
+    margin: 0;
+    padding: 0;  /* If your value is 0 then there is no need to use px value. */
+    box-sizing: border-box;
+}
+
+/* 2. Class Selector: selects element by using the value of class attribute. */
+
+.classSelector{
+    color: #4d2897;
+}
+
+/* 3. Id Selector: selects element by using the id. */
+#idSelector{
+    color: yellow;
+    background-color: black;
+}
+
+/* 4. Type Selector: selects element by using the name of element. */
+p{
+    font-style: italic;
+}
+
+/* 5. Attribute Selector: selects element by using the attribute. */
+
+a[href="#"]{
+    font-size: xx-large;
+}
+
+/* 6. Descendant Selector: Try to read it from right to left means selects all the p elements those are descendant of the article element. 
+Descendant selector is going to select not only the childrens but the grandchidrens and greatgrandchildrens also */
+
+article p{
+    color: yellow;
+    background-color: #4d2897;
+}
+
+/* 7. Child Selector: It selects only its child elements not grand childrens or great grand childrens */
+
+section > p{
+    color: burlywood;
+    background-color: #1a1a1a;
+}
+
+/* 8. Adjacent Sibling Selector Selector: It selects only adjacent element. */
+
+h1 + p{
+    font-style: italic;
+    color: #fff;
+    background-color: #1a1a1a;
+    font-weight: bolder;
+}
+
+/* 9. General Sibling Selector: */
+
+#generalSibling ~ p{
+    font-style: italic;
+    color: #fff;
+    background-color: #1a1a1a;
+    font-weight: bolder;
+}
+
+/*
+10. Pseudo-class Selector
+
+Some HTML elements have different behaviors when you select the input, different behavior when you put the mouse over it. And you can control all of these properties based on what element you are targeting.
+*/
+
+button:hover{
+    background-color: blue;
+    color: #fff;
+}
+
+/* Pseudo Element Selector: These elements are used to to select specific part of element. */
+
+#pseudoElementSelector::first-letter{
+    font-size: 50px;
+}
+
+/* Grouping Selector: used to select multiple elements */
+
+h3, h4, h5{
+    background-color: black;
+    color: #fff;
+}

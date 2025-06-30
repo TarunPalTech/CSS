@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <!-- You can see the effect of universal selector there is no margin and padding  -->
+    <p style="background-color: black; color: #fff">
+      Lorem ipsum dolor sit amet.
+    </p>
+
+    <h1 class="clssSelecor">Lorem ipsum dolor sit amet.</h1>
+
+    <p id="idSelector">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo ut est cum
+      rerum magni reiciendis iusto voluptas enim. Ratione, aut.
+    </p>
+
+    <br /><br />
+    <a href="#">Click here!</a>
+    <br /><br />
+
+    <!-- Effect of descendant Selector -->
+    <article>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, atque?
+      </p>
+      <span>Lorem ipsum dolor sit amet.</span>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, atque?
+      </p>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+          voluptates?
+        </p>
+      </div>
+    </article>
+
+    <!-- Effects of child selector -->
+    <section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, atque?
+      </p>
+      <span>Lorem ipsum dolor sit amet.</span>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, atque?
+      </p>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+          voluptates?
+        </p>
+      </div>
+    </section>
+
+    <!-- Effects of adjacent sibling selector -->
+    <div>
+      <h1>Lorem ipsum dolor sit amet.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, nihil.</p>
+      <!-- Second p tag is not effected. -->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+        necessitatibus.
+      </p>
+    </div>
+
+    <!-- Effects of general sibling selector -->
+    <div>
+      <h1 id="generalSibling">Lorem ipsum dolor sit amet.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, nihil.</p>
+      <!-- Second p tag will be effected. -->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+        necessitatibus.
+      </p>
+    </div>
+    <br /><br />
+    <button>Button</button>
+    <br><br>
+
+    <!-- Pseusdo Element Selector -->
+    <h1 id="pseudoElementSelector">Lorem ipsum dolor sit amet.</h1>
+
+
+    <!-- Goruping Selector -->
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <h4>Lorem ipsum dolor sit amet.</h4>
+    <h5>Lorem ipsum dolor sit amet.</h5>
+  </body>
+</html>
