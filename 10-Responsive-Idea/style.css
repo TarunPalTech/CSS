@@ -1,0 +1,37 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: darkred;
+    color: aliceblue;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.responsive{
+    background-color: blue;
+    max-width: 1200px;
+    font-size: 70px;
+}
+
+@media (max-width: 600px){
+    body{
+        align-items: flex-start;
+    }
+    .responsive{
+        background-color: chartreuse;
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px){
+    body{
+        align-items: center;
+    }
+    .responsive{
+        background-color: rgb(198, 212, 216);
+        font-size: 50px;
+    }
+}
